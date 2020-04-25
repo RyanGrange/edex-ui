@@ -3,6 +3,7 @@ section#filesystem {
     top: -0.925vh;
     width: 43vw;
     height: 30vh;
+    margin-right: 0.5vw;
 
     opacity: 0;
     transition: opacity .5s cubic-bezier(0.4, 0, 1, 1);
@@ -99,6 +100,10 @@ div#fs_disp_container > * > h3 {
 
 section#filesystem:not(.list-view) > div#fs_disp_container > div > h4 {
     display: none;
+}
+
+div#fs_disp_container.disks > div > h4 {
+	  display: none;
 }
 
 section#filesystem.list-view > div#fs_disp_container {
